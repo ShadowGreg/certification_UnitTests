@@ -1,3 +1,6 @@
+Текстовове описание https://docs.google.com/document/d/1bMvSoP8QDVZNosXgE9sy05BemcJ4nzpOFsOxYpekbKA/edit?usp=sharing 
+
+
 Задание 1. Создайте программу на Python или Java, которая принимает два списка чисел и 
 выполняет следующие действия:
 a. Рассчитывает среднее значение каждого списка.

@@ -3,7 +3,17 @@ package ru.gb;
 import java.util.ArrayList;
 import java.util.List;
 
+import static ru.gb.Comparison.compare;
+
+/**
+ * This class contains the main method to compare the average values of two lists of integers.
+ */
 public class Main {
+    /**
+     * Compares the average values of two lists of integers and prints the result.
+     *
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         List<Integer> list1 = new ArrayList<>();
         list1.add(1);
@@ -15,24 +25,6 @@ public class Main {
         list2.add(5);
         list2.add(6);
 
-        double average1 = calculateAverage(list1);
-        double average2 = calculateAverage(list2);
-
-        if (average1 > average2) {
-            System.out.println("Первый список имеет большее среднее значение");
-        } else if (average1 < average2) {
-            System.out.println("Второй список имеет большее среднее значение");
-        } else {
-            System.out.println("Средние значения равны");
-        }
-    }
-
-    private static double calculateAverage(List<Integer> list) {
-        int sum = 0;
-        for (int num : list) {
-            sum += num;
-        }
-        return (double) sum / list.size();
+        System.out.println(compare(list1, list2));
     }
 }
-
